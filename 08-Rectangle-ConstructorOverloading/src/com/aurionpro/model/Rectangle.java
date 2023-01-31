@@ -4,6 +4,7 @@ public class Rectangle {
 
 	private double height;
 	private double width;
+	private Color color;
 
 	public void setHeight(double height) {
 		this.height = height;
@@ -14,14 +15,20 @@ public class Rectangle {
 		this.width = width;
 	}
 
-	public Rectangle(double height, double width) {
-		this.width = width;
+	public Rectangle(double height, double width, Color color) {
 		this.height = height;
+		this.width = width;
+		this.color = color;
+	}
+
+	public Rectangle(double height, double width) {
+
+		this(height, width, Color.blue);
+
 	}
 
 	public Rectangle() {
-		height = 5;
-		width = 10;
+		this(5, 8, Color.blue);
 	}
 
 	public double calcArea() {
@@ -35,6 +42,10 @@ public class Rectangle {
 
 	public double getWidth() {
 		return width;
+	}
+
+	public Color getColor() {
+		return color;
 	}
 
 }
