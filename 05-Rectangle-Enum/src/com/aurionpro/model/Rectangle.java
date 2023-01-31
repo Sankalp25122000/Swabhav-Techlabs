@@ -4,7 +4,7 @@ public class Rectangle {
 
 	private double height;
 	private int width;
-	private String color;
+	private Color color;
 
 	public void setHeight(double ht) {
 		height = getCorrectedValue(ht);
@@ -22,6 +22,9 @@ public class Rectangle {
 	public void setWidth(int wid) {
 		width = getCorrectedValue1(wid); 
 	}
+	public void setColor(Color color) {
+		this.color = color;
+	}
 
 	private int getCorrectedValue1(int num1) {
 		if (num1 < 0)
@@ -31,16 +34,7 @@ public class Rectangle {
 		return num1;
 	}
 
-	public void setColor(String c1) {
-		color = getCorrectedValue2(c1.toLowerCase());
-	}
-
-	private String getCorrectedValue2(String c1) {
-		if (c1.equals("blue") || c1.contentEquals("green")) {
-			return c1;
-		}
-		return "red";
-	}
+	
 
 	public double getHeight() {
 		return height;
@@ -49,9 +43,9 @@ public class Rectangle {
 	public int getWidth() {
 		return width;
 	}
-
-	public String getColor() {
+	public Color getColor() {
 		return color;
 	}
 
+	
 }
