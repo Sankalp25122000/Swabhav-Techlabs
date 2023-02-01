@@ -9,18 +9,19 @@ public class RectangleTest {
 		for (int i = 0; i < 5; i++) {
 			rectangles[i] = new Rectangle(10 + i, 20 + i);
 		}
-		for(Rectangle x : rectangles) {
+		for (Rectangle x : rectangles) {
+
 			printEachRectangle(x);
 		}
 
 	}
 
 	private static void printEachRectangle(Rectangle x) {
-		System.out.println("Height = "+ x.getHeight());
-		System.out.println("Width = "+ x.getWidth());
-		System.out.println("Area = "+ x.calculateArea());
+		System.out.println("Height = " + x.getHeight());
+		System.out.println("Width = " + x.getWidth());
+		System.out.println("Area = " + x.calculateArea());
 		System.out.println("============================");
-		
+
 	}
 
 }
