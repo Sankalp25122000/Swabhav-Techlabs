@@ -10,8 +10,8 @@ public class RectangleTest {
 			rectangles[i] = new Rectangle(10 + i, 20 + i);
 		}
 		for (Rectangle x : rectangles) {
-
-			printEachRectangle(x);
+            System.out.println(x);
+			//printEachRectangle(x);
 		}
 
 	}
