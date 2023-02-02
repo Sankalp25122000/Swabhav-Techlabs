@@ -37,7 +37,7 @@ public class AccountTest {
 	private static void sortAccounts(Account[] arr) {
 		for (int i = 0; i < 5; i++) {
 			for (int j = 0; j < 5 - i - 1; j++) {
-				if (arr[j].getBalance() > arr[j + 1].getBalance()) {
+				if (arr[j].getBalance() < arr[j + 1].getBalance()) {
 					Account temp = arr[j];
 					arr[j] = arr[j + 1];
 					arr[j + 1] = temp;
@@ -46,6 +46,7 @@ public class AccountTest {
 
 			}
 		}
+		
 
 	}
 }
