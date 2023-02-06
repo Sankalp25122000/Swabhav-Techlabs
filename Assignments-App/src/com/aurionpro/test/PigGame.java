@@ -1,6 +1,7 @@
 package com.aurionpro.test;
 
 import java.util.Random;
+
 import java.util.Scanner;
 
 public class PigGame {
@@ -12,32 +13,10 @@ public class PigGame {
 						+ "* If you hold, you save all points for the turn.");
 		Scanner sc = new Scanner(System.in);
 		Random ran = new Random();
+		int turn = 1;
+		
+		
+		
 
-		int randNo = 0;
-
-		int turnScore = 0;
-		int totalScore = 0;
-
-		do {
-
-			while (randNo != 1) {
-				System.out.println("Roll or Hold?(r/h)");
-				String input = sc.next();
-				if (input.equalsIgnoreCase("r")) {
-					randNo = ran.nextInt(6) + 1;
-					turnScore += randNo;
-
-					System.out.println("Die " + randNo);
-
-				} else if (input.equalsIgnoreCase("h")) {
-					System.out.println("Score for Turn is " + turnScore);
-
-				}
-
-			}
-
-		} while (totalScore < 21);
-		totalScore += turnScore;
-		System.out.println("Total Score is " + totalScore);
 	}
 }

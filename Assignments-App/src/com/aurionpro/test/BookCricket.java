@@ -68,14 +68,14 @@ public class BookCricket {
 
 			}
 			if (totalScore > totalScore1) {
-				System.out.println(name2 + " Wins the Match ");
+				System.out.println(name1 + " Wins the Match ");
 
-			} else if (count1 < count) {
+			} else if (count1 < count && totalScore == totalScore1) {
 				System.out.println(name2 + "Is the winner ");
 			}
 
 			else {
-				System.out.println(name1 + " Wins the Match");
+				System.out.println(name2 + " Wins the Match");
 			}
 		}
 	}
