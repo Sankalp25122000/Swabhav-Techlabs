@@ -10,8 +10,8 @@ public class Boy extends Man {
 	public void eats() {
 		System.out.println("Boy eats..");
 	}
-
-	public void plays() {
+    @Override
+	public void play() {
 		System.out.println("Boy plays..");
 	}
 
