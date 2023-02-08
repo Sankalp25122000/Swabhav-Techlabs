@@ -47,11 +47,12 @@ public class BookCricket {
 			totalScore = total;
 			System.out.println("Total Score is :" + totalScore);
 			System.out.println(name1 + " Takes " + count + " Rounds ");
-			System.out.println(name2 + " Needs " + totalScore + " Scores In " + count + " Rounds To Win Match ");
-			System.out.println("Player : " + name2);
-			System.out.println("Enter 1 to Open Book : ");
-			String input2 = sc.nextLine();
+			System.out.println(name2 + " Needs " + ++totalScore + " Scores In " + count + " Rounds To Win Match ");
+
 			while (count1 != count && run2 != 0) {
+				System.out.println("Player : " + name2);
+				System.out.println("Enter 1 to Open Book : ");
+				String input2 = sc.nextLine();
 
 				if (input2.equalsIgnoreCase("1")) {
 					randomNum = ran.nextInt(300);
@@ -64,9 +65,11 @@ public class BookCricket {
 				}
 				count1++;
 				totalScore1 = total1;
+
 				System.out.println("Total Score of " + name2 + " is " + totalScore1);
 
 			}
+
 			if (totalScore > totalScore1) {
 				System.out.println(name1 + " Wins the Match ");
 
