@@ -49,7 +49,7 @@ public class BookCricket {
 			System.out.println(name1 + " Takes " + count + " Rounds ");
 			System.out.println(name2 + " Needs " + ++totalScore + " Scores In " + count + " Rounds To Win Match ");
 
-			while (count1 != count && run2 != 0) {
+			while (count1 != count && run2 != 0 && totalScore>=totalScore1) {
 				System.out.println("Player : " + name2);
 				System.out.println("Enter 1 to Open Book : ");
 				String input2 = sc.nextLine();
