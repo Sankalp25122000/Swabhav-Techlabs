@@ -17,7 +17,6 @@ public class BookCricket {
 		int total1 = 0;
 		int count = 0;
 		int count1 = 0;
-		boolean bool = true;
 
 		System.out.println("Enter 1 to Start a game and 0 for Exit ");
 		String input = sc.nextLine();
@@ -49,7 +48,7 @@ public class BookCricket {
 			System.out.println(name1 + " Takes " + count + " Rounds ");
 			System.out.println(name2 + " Needs " + ++totalScore + " Scores In " + count + " Rounds To Win Match ");
 
-			while (count1 != count && run2 != 0 && totalScore>=totalScore1) {
+			while (count1 != count && run2 != 0 && totalScore >= totalScore1) {
 				System.out.println("Player : " + name2);
 				System.out.println("Enter 1 to Open Book : ");
 				String input2 = sc.nextLine();
@@ -81,5 +80,6 @@ public class BookCricket {
 				System.out.println(name2 + " Wins the Match");
 			}
 		}
+		sc.close();
 	}
 }
