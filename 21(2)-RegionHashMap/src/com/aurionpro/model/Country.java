@@ -1,8 +1,5 @@
 package com.aurionpro.model;
 
-import java.util.ArrayList;
-import java.util.List;
-
 public class Country {
 	private String region;
 	private String name;

@@ -12,8 +12,8 @@ public class CountryRegionTest {
 
 	public static void main(String[] args) {
 
-		Map<Integer,Region> regionList = new HashMap<>();
-		
+		Map<Integer, Region> regionList = new HashMap<>();
+
 		regionList.put(1, new Region(1, "Europe"));
 		regionList.put(2, new Region(2, "Americas"));
 		regionList.put(3, new Region(3, "Asia"));
@@ -47,17 +47,17 @@ public class CountryRegionTest {
 		countries.add(new Country("NG", "Nigeria", 4));
 		countries.add(new Country("AR", "Argentina", 2));
 		countries.add(new Country("BE", "Belgium", 1));
-		//System.out.println(countries);
-		
-		for(Country x : countries) {
+		// System.out.println(countries);
+
+		for (Country x : countries) {
 			int id = x.getRegionCode();
 			regionList.get(id).addCountries(x);
-	
-			}
+
+		}
 		System.out.println(regionList);
 		System.out.println("\nNumber of countries in each region");
-		for(Integer x: regionList.keySet()) {
-			System.out.println(regionList.get(x).getName()+" : "+regionList.get(x).getCountries().size());
+		for (Integer x : regionList.keySet()) {
+			System.out.println(regionList.get(x).getName() + " : " + regionList.get(x).getCountries().size());
 		}
 	}
 
