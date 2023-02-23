@@ -62,7 +62,7 @@ public class AccountTest {
 		double totalBalance = 0;
 		for (Account x : list) {
 			totalBalance += x.getBalance();
-			;
+			
 		}
 		System.out.println("Total balance of all accounts is " + totalBalance);
 		System.out.println();

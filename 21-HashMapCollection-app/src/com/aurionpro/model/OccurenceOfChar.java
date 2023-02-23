@@ -9,6 +9,7 @@ public class OccurenceOfChar {
 	public static void main(String[] args) {
 		Map<Character, Integer> countChar = new HashMap<Character, Integer>();
 		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter your name to see each character occurence ");
 		String input = sc.nextLine();
 //		input.toLowerCase();
 //		char[] strArray = input.toCharArray();
@@ -21,7 +22,8 @@ public class OccurenceOfChar {
 					countChar.put(c, 1);
 			}
 		}
-		countChar.forEach((key, value) -> System.out.println(key + " : " + value)); //for iterating all elements in map
+
+		countChar.forEach((key, value) -> System.out.println(key + " : " + value)); // for iterating all elements in map
 //		for (Character x : countChar.keySet()) {
 //			System.out.println(x + " : " + countChar.get(x));
 //		}
