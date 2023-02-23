@@ -20,7 +20,10 @@ public class PrintNames {
 
 		List<String> sortByName3 = studentList.stream().sorted(Collections.reverseOrder()).collect(Collectors.toList());
 		System.out.println("Reversed ordered" + sortByName3);
-
+		
+		List<String> firstThreeCharacter = studentList.stream().map(n -> n.substring(0,3)).collect(Collectors.toList());
+        System.out.println("First three character of name "+firstThreeCharacter);
+       
 		List<String> sortByName5 = studentList.stream().filter(n -> n.length() <= 4).collect(Collectors.toList());
 		System.out.println("Names of students less than 4 of equal characters " + sortByName5);
 	}

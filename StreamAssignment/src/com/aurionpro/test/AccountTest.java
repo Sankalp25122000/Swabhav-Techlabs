@@ -19,12 +19,13 @@ public class AccountTest {
 		System.out.println("Name greater than 6 characters");
 		List<Account> collect = accountList.stream().filter(n -> n.getName().length() > 6).collect(Collectors.toList());
 		System.out.println(collect);
-		int totalBalance = 0;
-		for (Account x : accountList) {
-			totalBalance += x.getBalance();
-		}
-		System.out.println("Total balance is " + totalBalance);
-
+//		int totalBalance = 0;
+//		for (Account x : accountList) {
+//			totalBalance += x.getBalance();
+//		}
+//		System.out.println("Total balance is " + totalBalance);
+		Double totalBalance = accountList.stream().collect(Collectors.summingDouble(Account::getBalance));
+		System.out.println("Total balance is "+totalBalance);
 	}
 
 }
