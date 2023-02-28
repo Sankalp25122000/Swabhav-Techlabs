@@ -6,7 +6,7 @@ import com.aurionpro.model.InsufficientFundsException;
 public class AccountTest {
 
 	public static void main(String[] args) {
-		Account account = new Account(1234, "Sankalp", 3000);
+		Account account = new Account(1234, "Sankalp", 500);
 		try {
 			account.withdraw(1000);
 		} catch (InsufficientFundsException e) {

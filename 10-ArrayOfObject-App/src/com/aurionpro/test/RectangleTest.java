@@ -11,7 +11,7 @@ public class RectangleTest {
 		}
 		for (Rectangle x : rectangles) {
             System.out.println(x);
-			//printEachRectangle(x);
+			printEachRectangle(x);
 		}
 
 	}
